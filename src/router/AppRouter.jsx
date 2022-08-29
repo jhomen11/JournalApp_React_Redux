@@ -4,7 +4,7 @@ import JournalRoutes from "../journal/routes/JournalRoutes";
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    
       <Routes>
         {/* Login y registro */}
         <Route path="/auth/*" element={<AuthRoutes />} />
@@ -12,6 +12,5 @@ export const AppRouter = () => {
         {/* JuornalApp */}
         <Route path="/*" element={<JournalRoutes />} />
       </Routes>
-    </BrowserRouter>
   );
 };
